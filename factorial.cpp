@@ -3,13 +3,10 @@ using namespace std;
 
 int factorial(int n)
 {
-    int i;
-    int m=1;
-    for(i=1;i<=n;i++)
-    {
-        m=m*i;
-    }
-    return m;
+    if(n==0)
+        return 1;
+    else
+        return n*factorial(n-1);
 }
 int main()
 {
